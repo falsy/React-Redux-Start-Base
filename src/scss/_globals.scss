@@ -1,0 +1,17 @@
+// Clearfix
+:global(.clearfix:after) {
+  content: "";
+  display: table;
+  clear: both
+}
+
+// Container
+:global(.container) {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+:global(.content) {
+  padding: 20px 0;
+  min-height: 400px;
+}
