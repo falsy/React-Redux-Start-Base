@@ -10,10 +10,9 @@ render(
 
 if (module && module.hot) {
   module.hot.accept('./App', () => {
-    const Visual = require('./App').default;
     render(
       <AppContainer>
-        <Visual />
+        <App />
       </AppContainer>,
       document.getElementById('wrap')
     );

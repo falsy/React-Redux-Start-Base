@@ -1,1 +1,1 @@
-export temp from './temp.reducer';
+export test from './test';

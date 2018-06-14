@@ -1,4 +1,4 @@
-import { GET_TEMP, SET_TEMP } from '../constants/temp.constant';
+import { TEST } from '../constants';
 
 const initialState = {
   temp: 0
@@ -6,10 +6,8 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case GET_TEMP:
+    case TEST:
       return { ...state, temp: state.temp };
-    case SET_TEMP:
-      return { ...state, temp: state.temp + Number(action.data) };
     default:
       return state;
   }

@@ -7,9 +7,9 @@ let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
-  devtool: 'cheap-module-eval-source-map',
-
   context: resolve(__dirname, 'src'),
+
+  mode: 'development',
 
   entry: [
     'react-hot-loader/patch',
@@ -27,8 +27,11 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        loaders: ['babel-loader'],
-        exclude: /node_modules/
+        loader: 'babel-loader',
+        options: {
+          presets: ['env', 'react', 'stage-0']
+        },
+        exclude: ['/node_modules']
       },
       {
         test: /\.scss$/,
