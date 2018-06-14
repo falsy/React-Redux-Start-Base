@@ -36,8 +36,9 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader"
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
         ]
       },
       { test: /\.(png|jpg|gif)$/, use: 'url-loader?limit=15000&name=[hash:base64:5].[ext]' },

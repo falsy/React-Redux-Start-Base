@@ -6,6 +6,9 @@ Webpack, React, Redux, Babel, SCSS
 
 ## ChangeLog
 
+#### v0.0.3
+* add SCSS, postcss config
+
 #### v0.0.2
 * delete Jest, Enzyme, eslint
 * update Webpack v4
